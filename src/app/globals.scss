@@ -1,0 +1,79 @@
+@import "../styles/main.scss";
+
+// @use "@/styles/mixin" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ninja Naruto";
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-orange);
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+::-moz-selection {
+  color: var(--primary-orange);
+  background: var(--white);
+}
+
+::selection {
+  color: var(--primary-orange);
+  background: var(--white);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border: 1px solid var(--white);
+  background: var(--primary-orange);
+}
